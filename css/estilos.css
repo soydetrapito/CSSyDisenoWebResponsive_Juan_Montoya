@@ -1,16 +1,37 @@
-#cabecera{
+body{
+  background-color: black;
+  font-family: 'Dancing Script', cursive;
+}
+
+header {
   background-color: #5b7989;
-  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
+  padding-left: 5px;
+  height: 70px;
 }
 
 #titulo{
+  background-color: #5b7989;
   width: 50%;
-  text-align: left;
+  float: left;
   color: white;
   text-shadow: 2px 2px #02010a;
 }
 
 #navegacion{
-  width: 50%;
+  margin-top: 40px;
+  margin-right: 10px;
+  background-color: #5b7989;
+  width: 40 %;
+  float: right;
   color: white;
+}
+
+#navegacion > a{
+  padding: 5px;
+  color: white;
+}
+
+img{
+  box-shadow: 2px 2px #02010a;
 }
