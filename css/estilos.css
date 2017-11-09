@@ -1,5 +1,5 @@
 body{
-  background-color: black;
+  background-color: #02010a;
   font-family: 'Dancing Script', cursive;
   margin: 0 ;
 }
@@ -8,6 +8,10 @@ header {
   background-color: #5b7989;
   border-radius: 10px 10px 0px 0px;
   padding: 0.5em;
+}
+
+header > h1{
+  text-align: left;
 }
 
 #titulo{
@@ -31,6 +35,9 @@ img{
 }
 
 #contenido{
+  height: 10vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 900px) {
@@ -51,4 +58,8 @@ img{
   #titulo{
     width: 100%
   }
+}
+
+#actual{
+  text-decoration: none;
 }
