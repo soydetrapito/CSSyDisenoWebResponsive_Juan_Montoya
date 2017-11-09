@@ -1,37 +1,54 @@
 body{
   background-color: black;
   font-family: 'Dancing Script', cursive;
+  margin: 0 ;
 }
 
 header {
   background-color: #5b7989;
   border-radius: 10px 10px 0px 0px;
-  padding-left: 5px;
-  height: 70px;
+  padding: 0.5em;
 }
 
 #titulo{
   background-color: #5b7989;
-  width: 50%;
-  float: left;
   color: white;
   text-shadow: 2px 2px #02010a;
 }
 
 #navegacion{
-  margin-top: 40px;
-  margin-right: 10px;
   background-color: #5b7989;
-  width: 40 %;
-  float: right;
   color: white;
+  text-shadow: 2px 2px #02010a;
 }
 
 #navegacion > a{
-  padding: 5px;
   color: white;
 }
 
 img{
   box-shadow: 2px 2px #02010a;
+}
+
+#contenido{
+}
+
+@media (min-width: 900px) {
+  #contenido{
+    background-color: blue;
+    width: 900px;
+  }
+}
+
+@media (max-width:900px) {
+  #contenido{
+    background-color: green;
+    width:100%;
+  }
+  #navegacion{
+    width: 100%;
+  }
+  #titulo{
+    width: 100%
+  }
 }
