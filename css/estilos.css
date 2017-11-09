@@ -1,0 +1,16 @@
+#cabecera{
+  background-color: #5b7989;
+  border-radius: 10px;
+}
+
+#titulo{
+  width: 50%;
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px #02010a;
+}
+
+#navegacion{
+  width: 50%;
+  color: white;
+}
