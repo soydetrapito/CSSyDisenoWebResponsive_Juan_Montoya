@@ -14,7 +14,6 @@ body{
 }
 
 #cabecera > #titulo{
-  text-align: left;
   padding: 1vh 1vw;
 }
 
@@ -51,6 +50,7 @@ img{
   }
   #titulo{
     display: inline;
+    text-align: left;
   }
   #navegacion{
     display: inline;
@@ -62,23 +62,23 @@ img{
     width: 500px;
   }
   #secundario{
-    width: 890px;
-    padding: 20px 5px;
+    display: flex;
+    flex-direction: row;
   }
   .secundarias{
-    display: inline;
-    width: 445px;
-    padding: 0 20px;
+    flex-grow: 1;
+    padding: 20px;
   }
   .imagensecundaria{
+    border: 1px solid black;
     width: 405px;
-    margin: 0 auto;
   }
 }
 
 @media (max-width:900px) {
   #contenido, #cabecera, #titulo, #navegacion{
     width:100%;
+    text-align: center;
   }
   #principal{
     padding: 5% 5%;
@@ -91,9 +91,10 @@ img{
   }
   .secundarias{
     width: 100%;
-    padding: 5% 5%;
+    padding: 5% 0%;
   }
   .imagensecundaria{
+    border: 1px solid black;
     width: 90%;
   }
 
