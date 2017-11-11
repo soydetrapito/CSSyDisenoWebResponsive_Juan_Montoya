@@ -41,8 +41,8 @@ img{
 
 #secundario{
   background-color: #d5c75f;
-  margin-left: auto;
-  margin-right: auto;
+  /*margin-left: auto;
+  margin-right: auto;*/
 }
 
 @media (min-width: 900px) {
@@ -55,8 +55,24 @@ img{
   #navegacion{
     display: inline;
   }
+  #principal{
+    padding: 20px 200px;
+  }
+  #imagenprincipal{
+    width: 500px;
+  }
+  #secundario{
+    width: 890px;
+    padding: 20px 5px;
+  }
   .secundarias{
     display: inline;
+    width: 445px;
+    padding: 0 20px;
+  }
+  .imagensecundaria{
+    width: 405px;
+    margin: 0 auto;
   }
 }
 
@@ -64,29 +80,25 @@ img{
   #contenido, #cabecera, #titulo, #navegacion{
     width:100%;
   }
+  #principal{
+    padding: 5% 5%;
+  }
+  #imagenprincipal{
+    width: 100%;
+  }
+  #secundario{
+    width: 100%;
+  }
+  .secundarias{
+    width: 100%;
+    padding: 5% 5%;
+  }
+  .imagensecundaria{
+    width: 90%;
+  }
 
 }
 
 #actual{
   text-decoration: none;
-}
-
-#principal {
-  padding: 2vh 2vw;
-}
-
-#principal > img{
-  display: block;
-  margin: auto;
-  width: 80%;
-}
-
-.secundario{
-  padding: 2vh 2vw;
-}
-
-.secundario > img{
-  display: block;
-  margin: auto;
-  width: 60%;
 }
