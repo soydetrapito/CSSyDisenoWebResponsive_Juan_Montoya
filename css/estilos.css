@@ -22,15 +22,17 @@ body{
   padding: 1vh 1vw;
 }
 
+#secundario > .secundarias > a{
+  color: black;
+  display: block;
+  text-align: center;
+}
+
 img{
   box-shadow: 2px 2px #02010a;
 }
 
 #contenido{
-  /*margin-left: auto;
-  margin-right: auto;
-  background-color: #5b7989;
-  border-radius: 10px 10px 0px 0px;*/
   margin: 0 auto;
 }
 
@@ -40,8 +42,6 @@ img{
 
 #secundario{
   background-color: #d5c75f;
-  /*margin-left: auto;
-  margin-right: auto;*/
 }
 
 @media (min-width: 900px) {
