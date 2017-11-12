@@ -28,7 +28,7 @@ body{
   text-align: center;
 }
 
-img{
+#principal > img ,.secundarias > a > img{
   box-shadow: 2px 2px #02010a;
 }
 
@@ -49,8 +49,18 @@ img{
   border-radius: 0px 0px 10px 10px;
   padding: 1em 0;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
+}
+
+#redessociales > a > img{
+  width: 20px;
+}
+
+.elementopie{
+  padding: 1em;
+}
+
+.elementopie > a{
+  color: black;
 }
 
 @media (min-width: 900px) {
@@ -81,6 +91,10 @@ img{
   .imagensecundaria{
     border: 1px solid black;
     width: 405px;
+  }
+  #piedepagina{
+    display: flex;
+    flex-direction: row;
   }
   .elementopie{
     flex-grow: 1;
