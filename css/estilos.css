@@ -1,7 +1,20 @@
+@keyframes animacion_inicio {
+  0%{
+    transform: translate(0vw, 100vh);
+  }
+  70%{
+    transform: translate(0vw, -5vh);
+  }
+  100%{
+    transform: translate(0vw, 0vh);
+  }
+}
+
 body{
   background-color: #02010a;
   font-family: 'Dancing Script', cursive;
   margin: 0 ;
+  animation: animacion_inicio 0.8s;
 }
 
 #cabecera {
@@ -98,10 +111,13 @@ body{
   }
   #galeria{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
   #galeria > img{
     margin: 20px;
     width: 260px;
+    height: 200px;
   }
   .secundarias{
     flex-grow: 1;
@@ -119,6 +135,20 @@ body{
     flex-grow: 1;
   }
 }
+#imagen_secundaria_paisaje:hover{
+  transform: rotate(10deg);
+  transition: 0.5s;
+}
+#imagen_secundaria_paisaje{
+  transition: 0.5s;
+}
+#imagen_secundaria_retrato:hover{
+  transform: translate(20px, -5px);
+  transition: 0.5s;
+}
+#imagen_secundaria_retrato{
+  transition: 0.5s;
+}
 
 @media (max-width:900px) {
   #contenido, #cabecera, #titulo, #navegacion{
@@ -133,6 +163,10 @@ body{
   }
   #secundario{
     width: 100%;
+  }
+  #galeria > img{
+    margin: 5% 5%;
+    width: 90%;
   }
   .secundarias{
     width: 100%;
