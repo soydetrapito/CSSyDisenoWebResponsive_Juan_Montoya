@@ -28,7 +28,7 @@ body{
   text-align: center;
 }
 
-#principal > img ,.secundarias > a > img{
+#principal > img ,.secundarias > a > img, #galeria > img{
   box-shadow: 2px 2px #02010a;
 }
 
@@ -36,7 +36,7 @@ body{
   margin: 0 auto;
 }
 
-#principal{
+#principal, #galeria{
   background-color: #82c3a6;
 }
 
@@ -63,6 +63,18 @@ body{
   color: black;
 }
 
+#galeria > img:nth-child(1){
+  filter: blur(10px);
+}
+
+#galeria > img:nth-child(even){
+  filter: grayscale(100%);
+}
+
+#galeria > img:nth-child(3){
+  filter: sepia(90%);
+}
+
 @media (min-width: 900px) {
   #contenido, #cabecera, #piedepagina{
     width: 900px;
@@ -83,6 +95,13 @@ body{
   #secundario{
     display: flex;
     flex-direction: row;
+  }
+  #galeria{
+    display: flex;
+  }
+  #galeria > img{
+    margin: 20px;
+    width: 260px;
   }
   .secundarias{
     flex-grow: 1;
