@@ -1,12 +1,15 @@
 @keyframes animacion_inicio {
   0%{
-    transform: translate(0vw, 100vh);
+    margin-top: 150%;
+    /*transform: translate(0vw, 100vh);*/
   }
-  70%{
-    transform: translate(0vw, -5vh);
+  60%{
+    margin-top: -5%;
+    /*transform: translate(0vw, -5vh);*/
   }
   100%{
-    transform: translate(0vw, 0vh);
+    margin-top: 0%;
+    /*transform: translate(0vw, 0vh);*/
   }
 }
 
@@ -14,7 +17,7 @@ body{
   background-color: #02010a;
   font-family: 'Dancing Script', cursive;
   margin: 0 ;
-  animation: animacion_inicio 0.8s;
+  animation: animacion_inicio 1s;
 }
 
 #cabecera {
