@@ -13,6 +13,17 @@
     /*transform: translate(0vw, 0vh);*/
   }
 }
+@-webkit-keyframes animacion_inicio_webkit {
+  0%{
+    margin-top:150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
 
 /*EFECTOS APLICADOS A ETIQUETAS*/
 body{
@@ -20,6 +31,7 @@ body{
   font-family: 'Dancing Script', cursive;
   margin: 0 ;
   animation: animacion_inicio 1s;
+  -webkit-animation: animacion_inicio_webkit 1s;
 }
 
 #cabecera {
@@ -60,7 +72,7 @@ body{
 }
 
 #redessociales > a > img{
-  width: 2vw;
+  width: 20px;
 }
 
 .elementopie{
@@ -81,28 +93,37 @@ body{
 }
 #imagen_secundaria_paisaje:hover{
   transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
   transition: 0.5s;
+  -webkit-transition: 0.5s;
 }
 #imagen_secundaria_paisaje{
   transition: 0.5s;
+  -webkit-transition: 0.5s;
 }
 #imagen_secundaria_retrato:hover{
   transform: translate(20px, -5px);
+  -webkit-transform: translate(20px, -5px);
   transition: 0.5s;
+  -webkit-transition: 0.5s;
 }
 #imagen_secundaria_retrato{
   transition: 0.5s;
+  -webkit-transition: 0.5s;
 }
 #galeria > img:nth-child(1){
   filter: blur(10px);
+  -webkit-filter: blur(10px);
 }
 
 #galeria > img:nth-child(even){
   filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
 }
 
 #galeria > img:nth-child(3){
   filter: sepia(90%);
+  -webkit-filter: sepia(90%);
 }
 
 /*ESTILOS PARA DESKTOP*/
@@ -164,6 +185,17 @@ body{
   }
   #secundario{
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #secundario > a{
+    width: 100%;
+  }
+  #secundario > a >img{
+    margin: 5%;
+    width: 90%;
+    border: 1px solid black;
   }
   #galeria > img{
     margin: 5% 5%;
