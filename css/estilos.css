@@ -40,16 +40,6 @@ body{
   padding: 1vh 1vw;
 }
 
-#secundario > .secundarias > a{
-  color: black;
-  display: block;
-  text-align: center;
-}
-
-#principal > img ,.secundarias > a > img, #galeria > img{
-  box-shadow: 2px 2px #02010a;
-}
-
 #contenido{
   margin: 0 auto;
 }
@@ -81,24 +71,14 @@ body{
   color: black;
 }
 
-#galeria > img:nth-child(1){
-  filter: blur(10px);
-}
-
-#galeria > img:nth-child(even){
-  filter: grayscale(100%);
-}
-
-#galeria > img:nth-child(3){
-  filter: sepia(90%);
-}
-
 #actual{
   text-decoration: none;
 }
 
 /*EFECTOS DE MOVIMIENTO IMAGENES*/
-
+#principal > img ,.secundarias > a > img, #galeria > img{
+  box-shadow: 2px 2px #02010a;
+}
 #imagen_secundaria_paisaje:hover{
   transform: rotate(10deg);
   transition: 0.5s;
@@ -112,6 +92,17 @@ body{
 }
 #imagen_secundaria_retrato{
   transition: 0.5s;
+}
+#galeria > img:nth-child(1){
+  filter: blur(10px);
+}
+
+#galeria > img:nth-child(even){
+  filter: grayscale(100%);
+}
+
+#galeria > img:nth-child(3){
+  filter: sepia(90%);
 }
 
 /*ESTILOS PARA DESKTOP*/
@@ -139,12 +130,9 @@ body{
     width: 50%;
   }
   #secundario > a >img{
-
-  }
-  .imagensecundaria{
+    margin: 5%;
+    width: 90%;
     border: 1px solid black;
-    width: 46%;
-    margin: 2% 2%;
   }
   #galeria{
     display: flex;
