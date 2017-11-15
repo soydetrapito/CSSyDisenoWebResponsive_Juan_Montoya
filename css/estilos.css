@@ -139,7 +139,7 @@ body{
     display: inline;
   }
   #principal > img{
-    margin: 5% 5%;
+    margin: 5%;
     width: 90%;
   }
   #secundario{
@@ -159,17 +159,19 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    width: 100%;
   }
   #galeria > img{
     margin: 2%;
     width: 29.3%;
+    height: 30%;
   }
   #piedepagina{
     display: flex;
     flex-direction: row;
   }
   .elementopie{
-    flex-grow: 1;
+    width: 25%;
   }
 }
 
@@ -180,7 +182,7 @@ body{
     text-align: center;
   }
   #principal > img{
-    margin: 5% 5%;
+    margin: 5%;
     width: 90%;
   }
   #secundario{
@@ -197,17 +199,22 @@ body{
     width: 90%;
     border: 1px solid black;
   }
-  #galeria > img{
-    margin: 5% 5%;
-    width: 90%;
-  }
-  .secundarias{
+  #galeria{
     width: 100%;
-    padding: 5% 0%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
-  .imagensecundaria{
-    border: 1px solid black;
+  #galeria > img{
+    margin: 5%;
     width: 90%;
   }
 
+  #piedepagina{
+    display: flex;
+    flex-direction: column;
+  }
+  .elementopie{
+    width: 100%;
+  }
 }
