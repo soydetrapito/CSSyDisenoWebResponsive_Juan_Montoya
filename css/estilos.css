@@ -68,7 +68,7 @@ body{
 }
 
 #redessociales > a > img{
-  width: 20px;
+  width: 2vw;
 }
 
 .elementopie{
@@ -91,7 +91,7 @@ body{
   filter: sepia(90%);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) {/*DESKTOP*/
   #contenido, #cabecera, #piedepagina{
     width: 900px;
   }
@@ -102,11 +102,9 @@ body{
   #navegacion{
     display: inline;
   }
-  #principal{
-    padding: 20px 200px;
-  }
-  #imagenprincipal{
-    width: 500px;
+  #principal > img{
+    margin: 5% 5%;
+    width: 90%;
   }
   #secundario{
     display: flex;
@@ -118,9 +116,9 @@ body{
     flex-direction: row;
   }
   #galeria > img{
-    margin: 20px;
-    width: 260px;
-    height: 200px;
+    margin: 2%;
+    width: 29.3%;
+    height: auto;
   }
   .secundarias{
     flex-grow: 1;
@@ -153,16 +151,14 @@ body{
   transition: 0.5s;
 }
 
-@media (max-width:900px) {
+@media (max-width:900px) {/*MOVIL*/
   #contenido, #cabecera, #titulo, #navegacion{
     width:100%;
     text-align: center;
   }
-  #principal{
-    padding: 5% 5%;
-  }
-  #imagenprincipal{
-    width: 100%;
+  #principal > img{
+    margin: 5% 5%;
+    width: 90%;
   }
   #secundario{
     width: 100%;
